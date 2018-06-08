@@ -7,7 +7,7 @@
 ## ターミナルに打ったコマンド
 
 ```
-【root@DESKTOP-C5R292V:~# ruby -v
+root@DESKTOP-C5R292V:~# ruby -v
 ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux]
 root@DESKTOP-C5R292V:~# pwd
 /root
@@ -88,5 +88,5 @@ root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# ruby helloruby.rb
 Hello, Ruby.
 root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# ruby helloruby.rb
 Hello, Ruby.
-root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro#】
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro#
 ```

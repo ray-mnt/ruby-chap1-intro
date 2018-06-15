@@ -90,3 +90,91 @@ root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# ruby helloruby.rb
 Hello, Ruby.
 root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro#
 ```
+
+```
+Traceback (most recent call last):
+        3: from kuri4.rb:3:in `<main>'
+        2: from kuri4.rb:3:in `puts'
+        1: from kuri4.rb:3:in `puts'
+kuri4.rb:3:in `write': Interrupt
+
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# vi kuri4.rb
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# ruby kuri4.rb
+1
+2
+3
+4
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# vi kuri4.5.rb
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# ruby kuri4.5.rb
+5
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# ruby kuri3.rb
+awk
+Perl
+Python
+Ruby
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# vi kuri3.5.rb
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# ruby kuri3.5.rb
+0
+1
+2
+3
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# vi kuri3.rb
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# ruby kuri3.rb
+15
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# irb
+irb(main):001:0> sum = 0
+=> 0
+irb(main):002:0> for i in 1..5
+irb(main):003:1>  sum =sum +i
+irb(main):004:1> end
+=> 1..5
+irb(main):005:0> put sum
+Traceback (most recent call last):
+        2: from /root/.rbenv/versions/2.5.1/bin/irb:11:in `<main>'
+        1: from (irb):5
+NoMethodError (undefined method `put' for main:Object)
+Did you mean?  puts
+               putc
+irb(main):006:0>
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# vi kuri3.rb
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# ruby kuri3.rb
+Traceback (most recent call last):
+        2: from kuri3.rb:1:in `<main>'
+        1: from kuri3.rb:1:in `each'
+kuri3.rb:2:in `block in <main>': undefined method `+' for nil:NilClass (NoMethodError)
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# vi kuri3.rb
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# ruby kuri3.rb
+15
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# vi kuri3.1.rb
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# ruby kuri3.rb
+15
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# ruby kuri3.1.rb
+165
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# irb
+irb(main):001:0> 10+11+12+13+14+15+16+17+18+19+20
+=> 165
+irb(main):002:0>
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# ruby kuri3.rb
+15
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# vi kuri3.1.rb
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# vi kuri4.5.rb
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# cp kuri4.5.rb kuri5.rb
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# vi kuri5.rb
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# ruby kuri5.rb
+6
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# vi kuri5.rb
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# ruby kuri5.rb
+0
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# vi kuri5.rb
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# ruby kuri5.rb
+50
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# vi kuri6.rb
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# ruby kuri6.rb
+a
+b
+c
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# git add *
+root@DESKTOP-C5R292V:~/fujiwara/ruby-chap1-intro# ls
+helloruby.rb  kuri2.rb    kuri3.5.rb  kuri4.5.rb  kuri5.rb  kuri.rb
+kuri0.rb      kuri3.1.rb  kuri3.rb    kuri4.rb    kuri6.rb  README.md
+```
